@@ -8,73 +8,71 @@
 
 /*HOME PAGE CSS*/
 
+
+
 .home_header {
     width: 100%;
-    background-color: #6bb5ff;
-    color: white;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    /* background-color: rgb(0, 179, 255); */
+    background: linear-gradient(to right,rgb(0, 179, 255),80%,rgba(133, 133, 133, 0.4));
 }
 
 .header_section {
-    height: 160px;
-    width: 100%;
-
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
 
+    width: 100%;
     padding: 10px;
-    border-bottom: 3px solid black;
 }
 
-#vacoe-logo {
-    height: 140px;
-    width: 140px;
-
-    margin-left: 10px;
+#home_header_d1 {
     border-radius: 50%;
-    border: 3px solid black;
+    padding: 5px;
+
 }
 
-#grade {
-    height: 130px;
-    width: 150px;
+#home_header_d1 img {
+    border-radius: 50%;
+
+    width: 140px;
+    height: 140px;
+    border: 2px solid black;
+
+    text-align: center;
+}
+
+
+#home_header_d3 img {
+    border-radius: 30%;
+
+    width: 130px;
+    height: 120px;
+
+    box-shadow: 0px 0px 10px 2px rgba(255, 255, 255, 0.7);
 }
 
 #home_header_d2 {
-    flex-wrap: wrap;
+    text-align: center;
+    font-size: 1.2rem;
+
+    padding: 10px;
 }
+
 #home_header_d2 h2 {
-    font-size: 2rem;
-    letter-spacing: 1px;
-
-    margin-bottom: 20px;
-    margin-left: 10px;
-}
-
-#home_header_d2 p {
-    color: black;
+    margin-bottom: 4%;
+    color: white;
     font-weight: bold;
+    letter-spacing: 0.2rem;
+}
+
+#home_header_d2 p{
+    color: white;
     font-weight: 500;
-    letter-spacing: 1px;
-    margin-left: 20px;
+    font-size: 1rem;
+
 }
 
-#home_header_d4 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-#home_header_d4 i {
-    font-size: 25px;
-    padding: 5px;
-    border-radius: 50%;
-}
 
 .hero-section1 {
     width: 100%;
@@ -97,7 +95,7 @@
 
 #navbar a {
     color: white;
-    background-color: #66b3ff;
+    background-color: rgb(0, 179, 255);
 
     text-decoration: none;
     display: flex;
@@ -120,9 +118,9 @@
     transform: translateY(-4px);
     transition: 0.3s;
     /* background-color: #20a6ff; */
-    background: linear-gradient(to right,rgba(133, 133, 133, 0.4),rgb(0, 179, 255));
+    background: linear-gradient(to right,rgb(0, 179, 255),80%,rgba(133, 133, 133, 0.4));
     color: white;
-    font-weight: bold;
+    font-weight: bold; 
 }
 
 #navbar a.active {
@@ -166,6 +164,7 @@
     /*
     background: linear-gradient(to right,rgba(133, 133, 133, 0.4),rgb(0, 179, 255),rgba(133, 133, 133, 0.4));
     */
+    
     background-color: rgb(155, 155, 155,0.5);
     box-shadow: 2px 0px 5px 2px rgba(0, 0, 0, 0.5);
     color: white;
@@ -235,6 +234,9 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    flex-wrap: wrap;
+
+    gap: 20px;
 
     width: 100%;
     height: fit-content;
@@ -244,7 +246,8 @@
 
 
 .hero-section3 div {
-    width: 30%;
+    width: 350px;
+    max-width: 90%;
     height: 200px;
 
     display: flex;
@@ -418,9 +421,6 @@
     font-size: 1.1rem;
 }
 
-.copyright_section a:hover {
-    transform: translateY(-5px);
-    text-decoration: none;
-    color: rgba(132, 0, 255, 0.833);
-    transition: 0.2s;
+.copyright_section a{
+    color: black;
 }
