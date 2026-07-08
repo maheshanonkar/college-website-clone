@@ -1,0 +1,312 @@
+
+
+/*ACADEMICS PAGE CSS*/
+
+.main-section {
+
+    background-image: url(photos/academics-banner.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main-section h1 {
+    color: white;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+#diploma-heading-div {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#diploma-heading-div div {
+    width: 33%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#diploma-heading-div p {
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 1px;
+
+}
+
+.diploma-section {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.diploma-div {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+
+    width: 25%;
+    height: 150px;
+
+    color: white;
+    background: rgb(0, 0, 0, 0.3);
+    border: 1px solid black;
+    border-radius: 5px;
+
+    margin: 20px;
+    padding: 20px;
+
+    position: relative;
+}
+
+.diploma-div:hover {
+    transform: translateY(-7px) scale(1.02);
+    box-shadow: 0px 5px 10px 0px rgba(255, 255, 255, 0.7);
+    transition: 0.3s;
+    background: rgb(0, 0, 0, 0.6);
+
+}
+
+.diploma-div p {
+    text-align: center;
+    font-size: 1rem;
+
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.diploma-div h2 {
+    font-size: 1.7rem;
+    letter-spacing: 1px;
+}
+
+#ug-heading-div {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#ug-heading-div div {
+    width: 33%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#ug-heading-div p {
+    font-size: 3rem;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.ug-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.ug-div {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+
+    width: 25%;
+    height: 150px;
+
+    color: white;
+    background: rgb(0, 0, 0, 0.3);
+    border: 1px solid black;
+    border-radius: 5px;
+
+    margin: 20px;
+    padding: 20px;
+
+    position: relative;
+}
+
+.ug-div p {
+
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 20px;
+    padding: 10px;
+
+    text-align: center;
+    font-size: 1rem;
+
+    /*
+    display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+.ug-div:hover {
+    transform: translateY(-7px);
+    transition: 0.3s;
+    box-shadow: 0px 5px 10px 0px rgba(255, 255, 255, 0.7);
+    background: rgb(0, 0, 0, 0.6);
+}
+
+.ug-div h2 {
+    font-size: 1.7rem;
+    letter-spacing: 1px;
+}
+
+#pg-heading-div {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#pg-heading-div div {
+    width: 33%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#pg-heading-div p {
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 1px;
+}
+
+.pg-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.pg-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.pg-div {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+
+    width: 25%;
+    height: 160px;
+
+    color: white;
+    background: rgb(0, 0, 0, 0.3);
+    border: 1px solid black;
+    border-radius: 5px;
+
+    margin: 20px;
+    padding: 20px;
+
+    position: relative;
+}
+
+.pg-div:hover {
+    transform: translateY(-7px);
+    transition: 0.3s;
+    box-shadow: 0px 5px 10px 0px rgba(255, 255, 255, 0.7);
+    background: rgb(0, 0, 0, 0.6);
+}
+
+.pg-div p {
+
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 10px;
+    padding: 10px;
+
+    text-align: center;
+    font-size: 1rem;
+
+    /*
+    display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+.pg-div h2 {
+    font-size: 1.7rem;
+    letter-spacing: 1px;
+}
+
+/*CONTACT PAGE CSS*/
+
+/*
+#contact_main{
+    background-image: url(photos/about-logo.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+    */
+.contact-hero-section1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    padding: 10px;
+    height: 400px;
+    margin: 40px;
+
+    flex-wrap: wrap;
+}
+
+#follow_div {
+    width: 25%;
+    height: 60%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+
+    padding: 20px;
+    border-radius: 20px;
+
+    position: relative;
+
+    box-shadow: 0px 0px 6px 4px rgba(0, 0, 0, 0.5);
+    border: 1px solid white;
+
+}
+
+#follow_div::before {
+    content: 'FOLLOW US ON';
+
+    position: absolute;
+    height: fit-content;
+    width: fit-content;
+
+    padding: 10px;
+    text-align: center;
+    top: 0;
+    transform: translateY(-20px);
+
+    background-color:
+        /* rgba(0, 0, 0, 0.5) */
+        #20a6ff;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
