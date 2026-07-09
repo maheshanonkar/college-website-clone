@@ -142,13 +142,14 @@
     height: 100%;
 
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     flex-direction: column;
 
     position: relative;
 }
-
+ 
+/* 
 #main_heading_div h2{
     font-family: cursive;
 }
@@ -162,8 +163,8 @@
     font-size: x-large;
 
     /*
-    background: linear-gradient(to right,rgba(133, 133, 133, 0.4),rgb(0, 179, 255),rgba(133, 133, 133, 0.4));
-    */
+    background: linear-gradient(to right,rgba(133, 133, 133, 0.4),rgb(0, 179, 255),rgba(133, 133, 133, 0.4)); *
+    
     
     background-color: rgb(155, 155, 155,0.5);
     box-shadow: 2px 0px 5px 2px rgba(0, 0, 0, 0.5);
@@ -175,6 +176,67 @@
     top: 0;
     margin-top: 10%;
 }
+
+*/
+
+.slider{
+    width: 100%;
+    overflow: hidden;
+    padding: 10px 0;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    white-space: nowrap;
+
+    
+}
+
+.slider2{
+    width: 100%;
+    overflow: hidden;
+    padding: 10px 0;
+    background: rgba(185, 173, 173, 0.8);
+    color: white;
+    white-space: nowrap;
+
+    
+}
+
+.slide-text{
+    display: inline-block;
+    padding-left: 100%;
+
+    animation: scrollText 12s linear infinite;
+
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+
+
+.slide-text a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.slide-text span{
+    background-color: red;
+    padding: 5px 4px;
+
+    color: white;
+}
+
+@keyframes scrollText {
+    from{
+        transform: translateX(0);
+    }   
+    to{
+        transform: translateX(-100%);
+    }
+}
+
+
 
 #main_heading_div:hover{
     transform: translateY(-5px) scale(1.02);
@@ -310,7 +372,7 @@
     flex-direction: column;
 
     width: 33%;
-    border-right: 2px solid white;
+    
 }
 
 .footer_nav_div a {
@@ -335,6 +397,8 @@
     flex-direction: column;
 
     border-right: 2px solid white;
+    border-left: 2px solid white
+    ;
 }
 
 .footer_links_div a {
@@ -423,4 +487,135 @@
 
 .copyright_section a{
     color: black;
+}
+
+
+/* ACADEMICS PAGE */
+/**************************************/
+
+.grid1{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    width: 100%;
+    height: auto;
+    gap: 4px;
+    margin-top: 4px;
+    
+
+    transition: grid-template-columns 1s;
+}
+
+.grid1 img{
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    display: block;
+}
+
+.grid1:has(.classroom:hover){
+    grid-template-columns: 2.5fr .5fr .5fr .5fr;
+}
+
+.grid1:has(.library:hover){
+    grid-template-columns: .5fr 2.5fr .5fr .5fr;
+}
+
+.grid1:has(.ground:hover){
+    grid-template-columns: .5fr .5fr 2.5fr .5fr;
+}
+
+.grid1:has(.lab:hover){
+    grid-template-columns: .5fr .5fr .5fr 2.5fr;
+}
+
+/*
+.fac_list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+}
+
+#basic_text{
+    width: 20%;
+    height: fit-content;
+
+    background: linear-gradient(to right, rgba(133, 133, 133, 0.4),rgb(0, 179, 255));
+    padding: 10px;
+    text-align: center;
+}
+*/
+
+@media (max-width: 768px){
+    .grid1{
+        grid-template-columns: 1fr;
+        padding: 10px;
+    }
+}
+
+.grid3{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
+    width: 100%;
+    height: auto;
+    gap: 4px;
+
+
+    transition: grid-template-columns 1s;
+    margin-top: 4px
+}
+
+.grid3 img{
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    display: block;
+}
+
+.grid3:has(.campus1:hover){
+    grid-template-columns: 1.5fr .5fr .5fr .5fr .5fr;
+}
+.grid3:has(.campus2:hover){
+    grid-template-columns: .5fr 1.5fr .5fr .5fr .5fr;
+}
+.grid3:has(.campus3:hover){
+    grid-template-columns: .5fr .5fr 1.5fr .5fr .5fr;
+}
+.grid3:has(.campus4:hover){
+    grid-template-columns: .5fr .5fr .5fr 1.5fr .5fr;
+}
+.grid3:has(.campus5:hover){
+    grid-template-columns: .5fr .5fr .5fr .5fr  1.5fr;
+}
+
+@media (max-width: 768px){
+    .grid3{
+        grid-template-columns: 1fr;
+        
+    }
+}
+
+.academics_heading{
+    width: 100%;
+    padding: 10px;
+    background: linear-gradient(to right, #45a2ff,80%,white);
+    color: white;
+    font-weight: bold;
+}
+
+.academics_heading h2{
+    font-size: 2.2rem;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.academics_heading p{
+    font-size: 1.2rem;
 }
