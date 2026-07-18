@@ -65,40 +65,74 @@ if (result) {
 if (intake) {
     let intake_interval = setInterval(function () {
         intake.textContent = intake_start + "+";
-        intake_start+=4;
+        intake_start += 4;
         if (intake_start > 400) {
             clearInterval(intake_interval);
         }
     }, 10);
 }
 
-if(faculty){
-    let faculty_interval = setInterval(function(){
-        faculty.textContent= faculty_start + "+";
+if (faculty) {
+    let faculty_interval = setInterval(function () {
+        faculty.textContent = faculty_start + "+";
         faculty_start++;
-        if(faculty_start>100){
+        if (faculty_start > 100) {
             clearInterval(faculty_interval);
         }
-    },10);
+    }, 10);
 }
 
 
-let slider =  document.querySelector(".slider_div");
+let slider = document.querySelector(".slider_div");
 let cards = document.querySelectorAll(".card");
 
 currentIndex = 0;
 
-function showVCrad(){
-    slider.style.transform = `translateX(-${currentIndex*100}%)`;
+function showCard() {
+    slider.style.transform = `translateX(-${currentIndex * 100}%)`;
 }
 
-if(cards){
-    let sliderInterval = setInterval(function(){
+if (cards) {
+    let sliderInterval = setInterval(function () {
         currentIndex++;
-        if(currentIndex==cards.length){
-            currentIndex=0;
+        if (currentIndex == cards.length) {
+            currentIndex = 0;
         }
-        showVCrad();
-    },2000);
+        showCard();
+    }, 2000);
 }
-clearInterval(sliderInterval);
+
+/* LOGIN PAGE JS */ 
+let student = document.getElementById("student_div");
+let faculty_ = document.getElementById("faculty_div");
+let parent = document.getElementById("parent_div");
+
+student.addEventListener("mouseenter",()=>{
+    faculty_.style.filter="blur(2px)";
+    parent.style.filter="blur(2px)";
+});
+
+student.addEventListener("mouseleave",()=>{
+    faculty_.style.filter="blur(0px)";
+    parent.style.filter="blur(0px)";
+});
+
+faculty_.addEventListener("mouseenter",()=>{
+    student.style.filter="blur(2px)";
+    parent.style.filter="blur(2px)";
+});
+
+faculty_.addEventListener("mouseleave",()=>{
+    student.style.filter="blur(0px)";
+    parent.style.filter="blur(0px)";
+});
+
+parent.addEventListener("mouseenter",()=>{
+    faculty_.style.filter="blur(2px)";
+    student.style.filter="blur(2px)";
+});
+
+parent.addEventListener("mouseleave",()=>{
+    faculty_.style.filter="blur(0px)";
+    student.style.filter="blur(0px)";
+});

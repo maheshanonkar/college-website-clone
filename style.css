@@ -512,6 +512,11 @@
         grid-template-columns: 1fr;
         padding: 10px;
     }
+
+    .grid3 {
+        grid-template-columns: 1fr;
+        padding: 10px;
+    }
 }
 
 .grid3 {
@@ -522,9 +527,9 @@
     height: auto;
     gap: 4px;
 
-
     transition: grid-template-columns 1s;
-    margin-top: 4px
+    margin-top: 4px;
+    margin-bottom: 4px;
 }
 
 .grid3 img {
@@ -1334,4 +1339,128 @@
 .card h4{
     font-size: 1.2rem;
     color: black;
+}
+
+/* LOGIN PAGE */
+.login_section1{
+    max-width: 1400px;
+    width: 100%;
+    height: 100%;
+
+    border: 2px solid black;
+    padding: 10px;
+    margin: 0 auto;
+    margin-top: 4px;
+
+    letter-spacing: 1px;
+    background-image: url(photos/login_banner.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.login_main_div{
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.login_main_div .login_div{
+    border: 2px solid white;
+    box-shadow: 0px 0px 2px 3px rgba(0, 0, 0, 0.8);
+
+    max-width: 320px;
+    width: 100%;
+    height: 450px;
+    padding: 10px;
+    margin: 10px;
+
+    backdrop-filter: blur(2px);
+    border-radius: 20px;
+    transition: 0.6s;
+}
+
+.login_div div{
+    width: 100%;
+
+    padding: 10px;
+    margin: 5px;
+}
+
+.login_div h2{
+    letter-spacing: 1px;
+    color: white;
+}
+
+.login_div div input{
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+
+    border: 2px solid white;
+    box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.35);
+
+    background: #2abfff;
+    color: white;
+    font-weight: bold;
+    outline: none;
+}
+
+.login_input_box{
+    position: relative;
+}
+
+.login_input_box label{
+    position: absolute;
+    left: 20px;
+    top: 20px;
+
+    font-size: 0.9rem;
+    color: white;
+    transition: all 0.5s ease;
+    pointer-events: none;
+}
+
+.login_input_box #login_submit{
+    background: black;
+    width: 120px;
+    letter-spacing: 1px;
+    border-radius: 20px;
+}
+
+.login_input_box #login_submit:hover{
+    background: white;
+    color: black;
+    font-weight: bold;
+    border: 2px solid black;
+    width: 120px;
+    border-radius: 10px;
+
+    transition: all .5s ease;
+    transform: scale(1.02);
+}
+
+.login_input_box input:focus + label,.login_input_box input:hover + label  , .login_input_box input:valid + label{
+    top: -6px;
+    left: 20px;
+
+    font-size: 0.8rem;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+.login_headings{
+    text-align: center;
+    pointer-events: none;
+    user-select: none;
+}
+
+.blur{
+    filter: blur(4px);
+    opacity: 0.5;
+    transform: scale(0.95);
 }
