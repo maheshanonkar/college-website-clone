@@ -3,7 +3,7 @@
     margin: 0;
     box-sizing: border-box;
 
-    font-family: cursive;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 /*HOME PAGE CSS*/
@@ -142,7 +142,7 @@
 }
 
 .hero-section2 {
-    width: 100%;
+    min-width: 100%;
     height: 820px;
 
     background-image: url(../photos/main-banner.jpeg);
@@ -327,6 +327,7 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    flex-wrap: wrap;
 
     width: 100%;
     height: 250px;
@@ -453,16 +454,31 @@
     padding: 10px;
     color: white;
     font-size: 1.1rem;
+    pointer-events: none;
+    user-select: none;
 }
 
 .copyright_section a {
     color: black;
+    pointer-events: all;
+    user-select: all;
 }
 
 
 /* FACILITIES PAGE */
 /**************************************/
+#fac_note{
+    padding: 5px;
+    position: relative;
 
+    margin-bottom: 1rem;
+}
+#fac_note p{
+    position: absolute;
+    right: 0;
+    font-size: 1rem;
+    user-select: none;
+}
 .grid1 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -521,18 +537,6 @@
     text-align: center;
 }
 */
-
-@media (max-width: 768px) {
-    .grid1 {
-        grid-template-columns: 1fr;
-        padding: 10px;
-    }
-
-    .grid3 {
-        grid-template-columns: 1fr;
-        padding: 10px;
-    }
-}
 
 .grid3 {
     display: grid;
@@ -1168,14 +1172,6 @@
     flex-wrap: wrap;
 }
 
-.about_main_section #about-banner img{
-    max-height: 540px;
-    height: 100%;
-    width: 95%;
-
-    box-shadow: 0px 0px 2px 4px rgb(0, 0, 0,0.5);
-}
-
 #about-banner{
     display: flex;
     justify-content: center;
@@ -1212,7 +1208,6 @@
     letter-spacing: 1px;
 
     box-shadow: 0px 0px 4px 4px rgb(255, 255, 255);
-    font-weight: bold;
     color: black;
     border-bottom-right-radius: 4rem;
 }
@@ -1290,10 +1285,11 @@
 
 .slider_container{
     overflow: hidden;
-    width: 90%;
+    width: 100%;
     letter-spacing: 1px;
 
     margin: 0 auto;
+    padding: 10px;
 }
 
 .slider_div{
@@ -1305,19 +1301,13 @@
 
 .card{
     min-width: 100%;
-    height: 220px;
+    height: 120px;
 
+    padding: 10px;
     text-align: center;
     border-radius: 20px;
-    color: white;
-    box-shadow: 0px 2px 4px 2px rgba(255, 255, 255, 0.7);
-    background: linear-gradient(180deg,#2abfff,80%,#f2fdff);
-    flex-shrink: 0;
+    color: black;   
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
 }
 
 .card p{
@@ -1340,9 +1330,8 @@
 
 .news_div{
     display: flex;
-    height: 120px;
+    height: 5rem;
     width: 100%;
-
     transition: transform 1s ease-in-out;
 }
 
@@ -1350,18 +1339,16 @@
     min-width: 100%;
 
     padding: 0px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
     text-align: center;
 }
 
 .news a{
-    color: #3d9eff;
+    color: #2a93fd;
     font-weight: bold;
     font-size: 1.4rem;
     letter-spacing: 1px;
+
+    padding: 2px;
 }
 
 #news_heading_div{
@@ -1390,14 +1377,12 @@
 
 /* LOGIN PAGE */
 .login_section1{
-    max-width: 1400px;
     width: 100%;
     height: 100%;
 
-    border: 2px solid black;
     padding: 10px;
     margin: 0 auto;
-    margin-top: 4px;
+    margin-top: 8px;
 
     letter-spacing: 1px;
     background-image: url(../photos/login_banner.jpeg);
@@ -1510,4 +1495,21 @@
     filter: blur(4px);
     opacity: 0.5;
     transform: scale(0.95);
+}
+
+@media (max-width: 768px) {
+    .grid1 {
+        grid-template-columns: 1fr;
+        padding: 10px;
+    }
+
+    .grid3 {
+        grid-template-columns: 1fr;
+        padding: 10px;
+    }
+
+    .card{
+        width: 100%;
+        height: 100%;
+    }
 }

@@ -101,12 +101,12 @@ if (cards) {
             currentIndex = 0;
         }
         showCard();
-    }, 2000);
+    }, 4000);
 
     cards.forEach(card => {
         card.addEventListener("mouseover", () => {
             clearInterval(sliderInterval);
-        });
+        });    
 
         card.addEventListener("mouseleave", () => {
             clearInterval(sliderInterval);
@@ -117,7 +117,7 @@ if (cards) {
                     currentIndex = 0;
                 }
                 showCard();
-            }, 2000);
+            }, 4000);
 
         });
     });
