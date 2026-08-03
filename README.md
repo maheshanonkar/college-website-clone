@@ -4,7 +4,7 @@ A responsive multi-page college website clone built using **HTML5**, **CSS3**, a
 
 ## 🌐 Live Demo
 
-🔗 https://your-github-pages-link](https://maheshanonkar.github.io/college-website-clone/
+🔗 https://maheshanonkar.github.io/college-website-clone/
 
 ## 📂 GitHub Repository
 
@@ -99,7 +99,7 @@ This project helped me practice and improve:
         <img src="assets/screenshots/facilities_page.png" alt="about_page_1" width="45%">
     </p>
 
-5. Contact Page
+5. About Page
 
     <p align="center">
         <img src="assets/screenshots/about_page_1.png" alt="about_page_1" width="45%">
