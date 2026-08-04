@@ -2,6 +2,8 @@
 let form = document.querySelector("form");
 let email_id = document.querySelector("#email");
 let phone_num = document.querySelector("#phone");
+let fullName = document.querySelector("#fullname");
+let message = document.querySelector("#message");
 
 if (form) {
     form.addEventListener("submit", function (dets) {
@@ -27,7 +29,11 @@ if (form) {
         }
 
         if (isValid) {
-            alert("Email and Phone Number format is correct.!")
+            alert("Thank you for your details...!")
+            email_id.value="";
+            phone_num.value="";
+            fullName.value="";
+            message.value="";
         }
     });
 }
@@ -50,7 +56,7 @@ if (alumni) {
         if (alumni_start > 10000) {
             clearInterval(alumni_interval);
         }
-    }, 10);
+    }, 30);
 }
 
 if (result) {
@@ -60,7 +66,7 @@ if (result) {
         if (result_start > 100) {
             clearInterval(result_interval);
         }
-    }, 10);
+    }, 30);
 }
 
 if (intake) {
@@ -70,7 +76,7 @@ if (intake) {
         if (intake_start > 400) {
             clearInterval(intake_interval);
         }
-    }, 10);
+    }, 30);
 }
 
 if (faculty) {
@@ -80,7 +86,7 @@ if (faculty) {
         if (faculty_start > 100) {
             clearInterval(faculty_interval);
         }
-    }, 10);
+    }, 30);
 }
 
 /* slider js */
@@ -106,7 +112,7 @@ if (cards) {
     cards.forEach(card => {
         card.addEventListener("mouseover", () => {
             clearInterval(sliderInterval);
-        });    
+        });
 
         card.addEventListener("mouseleave", () => {
             clearInterval(sliderInterval);
