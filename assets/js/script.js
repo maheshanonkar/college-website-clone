@@ -93,11 +93,10 @@ if (faculty) {
 let slider = document.querySelector(".slider_div");
 let cards = document.querySelectorAll(".card");
 
-currentIndex = 0;
+let currentIndex = 0;
 
 function showCard() {
     slider.style.transform = `translateX(-${currentIndex * 100}%)`;
-    cards.style.borderRadius = "20px";
 }
 
 if (cards) {
